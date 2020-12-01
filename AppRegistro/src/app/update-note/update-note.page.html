@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Actualizar Calificacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Materia" [(ngModel)]="note.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number"  min="1" pattern="^[0-9]+" rows="6" [(ngModel)]="note.content" placeholder="Ingresa una nota..."></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button color="primary" expand="full" (click)="updateNote()">Actualizar</ion-button>
+</ion-content>
